@@ -17,4 +17,4 @@ lazy:
 	make all
 	git commit -am "`date`"
 	git push
-	git
+	git status
