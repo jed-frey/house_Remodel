@@ -1,0 +1,14 @@
+numpy
+scipy
+sympy
+
+# Testing
+pytest
+pytest-html
+
+# Development 
+jupyter
+notebook
+
+# IDE
+spyder

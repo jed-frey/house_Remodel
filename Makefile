@@ -1,20 +1,8 @@
-SH ?= $(wildcard *.sh)
-MD ?= $(patsubst %.sh,%.md,${SH})
+ENVS:=python
 
-all: ${MD}
+#.PHONY: lazy
+#lazy:
+#	autopep8 --in-place --aggressive --aggressive --aggressive *.py
+#	isort --apply *.py
 
-%.md: %.sh
-# DEBUG ./${<}
-	./${<} > ${@}
-
-.PHONY: clean
-clean:
-	-rm -f *.md
-
-.PHONY: lazy
-lazy:
-	make clean
-	make all
-	git commit -am "`date`"
-	git push
-	git status
+include .mk_inc/env.mk
