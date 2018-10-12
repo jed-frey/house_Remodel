@@ -12,3 +12,9 @@ notebook
 
 # IDE
 spyder
+
+
+blockdiag
+seqdiag
+actdiag
+nwdiag
