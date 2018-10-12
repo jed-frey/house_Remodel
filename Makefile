@@ -1,8 +1,10 @@
-ENVS:=python
+# Config
+VENV=_${PROJ}
 
-#.PHONY: lazy
-#lazy:
-#	autopep8 --in-place --aggressive --aggressive --aggressive *.py
-#	isort --apply *.py
+# Environments to setup for this project
+# Available options: python arduino
+ENVS:=python git
 
+## make_sandwich includes
+# https://github.com/jed-frey/make_sandwich
 include .mk_inc/env.mk
